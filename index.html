@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lynote Press &amp; Media</title>
+  <meta name="description" content="Read Lynote press releases and selected media coverage about AI detection, humanization, and smarter writing workflows.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#1c1f23;--body:#41454c;--muted:#6d737c;--blue:#5785fa;--violet:#865eff;
+      --soft:#f7f9ff;--line:#e6e8ea;--white:#fff;--green:#46ca43;
+      --gradient:linear-gradient(105deg,#3d96ff 0%,#3666ff 43%,#7655ff 77%,#dc5cff 100%);
+      --shadow:0 14px 34px rgba(25,35,68,.07)
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font:14px/1.65 Inter,"Noto Sans SC",sans-serif;-webkit-font-smoothing:antialiased}body.modal-open{overflow:hidden}
+    h1,h2,h3,p{margin-top:0}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(1200px,calc(100% - 96px));margin-inline:auto}.accent{color:var(--violet)}
+    .hero{min-height:480px;padding:104px 0;position:relative;overflow:hidden;display:flex;align-items:center;border-bottom:1px solid #e8e8f1;background:radial-gradient(circle at 18% 24%,rgba(76,139,255,.16),transparent 34%),radial-gradient(circle at 82% 72%,rgba(154,91,255,.17),transparent 32%),linear-gradient(125deg,#f7fbff 0%,#f3f5ff 48%,#faf5ff 100%)}
+    .hero:before{content:"";position:absolute;inset:0;opacity:.34;background-image:linear-gradient(rgba(94,100,180,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(94,100,180,.055) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(to bottom,black,transparent 88%)}
+    .hero-copy{max-width:850px;margin:0 auto;position:relative;z-index:1;text-align:center}
+    h1{margin-bottom:22px;font-size:58px;line-height:1.06;letter-spacing:-.052em}.gradient{background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent}.tagline{max-width:700px;margin:0 auto;color:var(--body);font-size:18px;line-height:1.72}.btn{min-height:48px;padding:0 20px;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid transparent;border-radius:10px;font-weight:700;cursor:pointer;transition:.18s ease}.btn-primary{color:#fff;background:linear-gradient(110deg,var(--blue),var(--violet));box-shadow:0 10px 24px rgba(91,83,233,.2)}.btn-secondary{background:#fff;border-color:#dce1eb}.btn:hover{transform:translateY(-1px)}
+    section.content{padding:96px 0 112px}.section-head{max-width:760px;margin:0 auto 48px;text-align:center}.section-head h2{margin-bottom:13px;font-size:34px;line-height:1.25;letter-spacing:-.03em}.section-head p{margin:0;color:var(--body);font-size:16px}
+    .featured{min-height:390px;margin-bottom:78px;padding:56px 58px;position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:62px;border:1px solid #dfe2e9;border-radius:24px;background:linear-gradient(118deg,#fff 0%,#fff 66%,#f7f5ff 100%);box-shadow:0 18px 52px rgba(31,38,73,.07)}.featured:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--gradient)}.featured:after{content:"";position:absolute;width:280px;height:280px;right:-160px;top:-170px;border-radius:50%;background:rgba(129,91,247,.08)}.feature-copy{display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1}.meta{display:flex;align-items:center;gap:10px;margin-bottom:20px;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.055em;text-transform:uppercase}.meta span:first-child{color:#6644df}.meta i{width:3px;height:3px;border-radius:50%;background:#9da3ad}.feature-copy h3{max-width:720px;margin-bottom:18px;font-size:34px;line-height:1.22;letter-spacing:-.038em}.feature-copy p{max-width:680px;margin-bottom:28px;color:var(--body);font-size:16px;line-height:1.75}.feature-side{min-width:0;padding-left:40px;position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;border-left:1px solid #e1e3eb}.publisher{display:flex;flex-direction:column;gap:18px}.publisher img{width:180px;height:54px;object-fit:contain;object-position:left center;filter:brightness(0);opacity:.88}.publisher-note{padding-top:22px;border-top:1px solid #e1e3eb}.publisher-note span{display:block;margin-bottom:5px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.075em;text-transform:uppercase}.publisher-note strong{font-size:16px}.feature-index{color:#d9d4f2;font-size:72px;font-weight:800;line-height:1;letter-spacing:-.07em}.read-link{width:max-content;display:inline-flex;align-items:center;gap:8px;color:#6141da;font-weight:800}.read-link span{transition:transform .18s}.read-link:hover span{transform:translateX(3px)}
+    .coverage-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:26px}.coverage-head h2{margin:0;font-size:30px;letter-spacing:-.03em}.coverage-head p{max-width:520px;margin:0;color:var(--body);text-align:right}.media-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.media-card{min-height:350px;padding:26px;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:20px;background:#fff;transition:.2s ease}.media-card:hover{transform:translateY(-3px);border-color:#d7d4f2;box-shadow:var(--shadow)}.logo-box{height:72px;margin-bottom:24px;display:flex;align-items:center;justify-content:flex-start}.logo-box img{max-width:155px;max-height:48px;object-fit:contain;object-position:left center}.media-card h3{margin-bottom:13px;font-size:17px;line-height:1.45;letter-spacing:-.015em}.media-card p{margin-bottom:22px;color:var(--body);font-size:13px;line-height:1.7}.media-card .read-link{margin-top:auto;font-size:12px}.source{margin-bottom:10px;color:#7452e6;font-size:10px;font-weight:800;letter-spacing:.075em;text-transform:uppercase}
+    .contact{padding:0 0 104px}.contact-box{min-height:300px;padding:54px 62px;display:flex;align-items:center;justify-content:space-between;gap:50px;position:relative;overflow:hidden;border-radius:26px;background:linear-gradient(118deg,#1d2a58,#44389d 58%,#8159f8);color:#fff}.contact-box:after{content:"";position:absolute;width:350px;height:350px;right:-160px;top:-220px;border:1px solid rgba(255,255,255,.18);border-radius:50%}.contact-copy{max-width:700px;position:relative;z-index:1}.contact-kicker{margin-bottom:10px;color:#ccd7ff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.contact h2{margin-bottom:12px;font-size:32px;line-height:1.3;letter-spacing:-.03em}.contact p{margin:0;color:rgba(255,255,255,.78);font-size:15px}.contact .btn{position:relative;z-index:1;flex:0 0 auto;background:#fff;color:#563bd4;box-shadow:0 12px 28px rgba(18,20,54,.18)}
+    .modal{position:fixed;inset:0;z-index:50;padding:24px;display:none;align-items:center;justify-content:center;background:rgba(17,24,39,.63);backdrop-filter:blur(8px)}.modal.open{display:flex}.modal-panel{width:min(730px,100%);max-height:90vh;overflow:auto;position:relative;border-radius:22px;background:#fff;box-shadow:0 34px 90px rgba(21,27,50,.3)}.modal-head{padding:32px 36px 25px;background:linear-gradient(145deg,#f3f7ff,#fbf7ff);border-bottom:1px solid var(--line)}.modal-head h2{margin:0 50px 8px 0;font-size:28px;line-height:1.25}.modal-head p{margin:0;color:var(--body)}.modal-close{position:absolute;right:20px;top:20px;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;background:#fff;color:#596173;font-size:21px;cursor:pointer}.form{padding:28px 36px 34px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700}.field input,.field select,.field textarea{width:100%;border:1px solid #dce1ea;border-radius:10px;background:#fff;color:var(--ink);outline:0}.field input,.field select{height:47px;padding:0 13px}.field textarea{min-height:108px;padding:12px 13px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:#9b78ff;box-shadow:0 0 0 4px rgba(134,94,255,.1)}.form-foot{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:22px}.form-foot p{max-width:350px;margin:0;color:#7a818c;font-size:10px}.success{display:none;padding:56px 32px;text-align:center}.success.show{display:block}.success-icon{width:54px;height:54px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-size:25px;font-weight:800}.success h3{margin-bottom:8px;font-size:24px}.success p{max-width:460px;margin:0 auto 22px;color:var(--body)}
+    a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid rgba(87,133,250,.35);outline-offset:3px}
+    @media(max-width:1000px){.container{width:min(100% - 40px,760px)}.hero{min-height:420px;padding:84px 0}.featured{grid-template-columns:minmax(0,1fr) 190px;gap:38px;padding:46px 42px}.feature-side{padding-left:30px}.feature-index{font-size:58px}.media-grid{grid-template-columns:1fr 1fr}.coverage-head{display:block}.coverage-head p{margin-top:8px;text-align:left}.contact-box{padding:48px 42px}}
+    @media(max-width:700px){.featured{grid-template-columns:1fr;gap:34px}.feature-side{min-height:125px;padding:30px 0 0;border-left:0;border-top:1px solid #e1e3eb;display:grid;grid-template-columns:1fr auto;align-items:end}.publisher{gap:14px}.publisher-note{padding-top:16px}.feature-index{align-self:end}}
+    @media(max-width:600px){.container{width:calc(100% - 32px)}.hero{min-height:390px;padding:74px 0}h1{font-size:42px}.tagline{font-size:16px;line-height:1.65}.btn{width:100%}section.content{padding:72px 0 82px}.section-head{margin-bottom:34px}.section-head h2{font-size:27px}.featured{margin-bottom:58px;padding:34px 24px;border-radius:20px}.feature-copy h3{font-size:25px}.feature-copy p{font-size:14px}.feature-side{grid-template-columns:1fr}.feature-index{display:none}.publisher img{width:160px}.coverage-head h2{font-size:26px}.media-grid{grid-template-columns:1fr}.media-card{min-height:300px}.contact{padding-bottom:70px}.contact-box{padding:40px 24px;display:block;border-radius:22px}.contact h2{font-size:27px}.contact .btn{margin-top:25px}.modal{padding:0;align-items:flex-end}.modal-panel{width:100%;max-height:94vh;border-radius:22px 22px 0 0}.modal-head{padding:27px 22px 21px}.modal-head h2{font-size:24px}.modal-close{right:14px;top:14px}.form{padding:23px 22px 27px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.form-foot{align-items:stretch;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+  <link rel="stylesheet" href="press.css">
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container">
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <h1 id="page-title">Featured in the <span class="gradient">Media</span></h1>
+            <p class="tagline">See where Lynote has been featured and read coverage from technology, business, and AI publications around the world.</p>
+            <nav class="hero-jumps" aria-label="Jump to page section"><a href="#press-releases">Press Releases</a><a href="#media">Media</a><a href="#real-users">Real Users</a></nav>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="detector-concept">
+              <div class="concept-toolbar"><div class="concept-dots"><i></i><i></i><i></i></div><div class="concept-product"><strong>AI Detector</strong><small>Content analysis</small></div><span>API</span></div>
+              <div class="concept-body">
+                <div class="concept-score"><div class="score-value"><b>92%</b><small>AI probability</small></div></div>
+                <div class="concept-result"><div class="result-status"><i></i> Analysis complete</div><span>Likely AI-generated</span><p>Review the highlighted sentences before publishing.</p></div>
+              </div>
+              <div class="concept-analysis"><div class="analysis-label"><span>Sentence-level analysis</span><strong>8 signals found</strong></div><div class="concept-lines"><i></i><i></i><i></i></div></div>
+            </div>
+            <div class="humanizer-concept">
+              <div class="humanizer-title"><span>✦</span><div><strong>AI Humanizer</strong><small>Humanized output</small></div><em>Meaning preserved</em></div>
+              <div class="humanizer-output"><i></i><i></i><i></i></div>
+              <div class="humanizer-meta"><span>Natural tone</span><span>Ready to use</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="media-proof" aria-label="Publications featuring Lynote">
+      <div class="container"><span>Featured in</span><div class="proof-logos"><img src="assets/ilounge.webp" alt="iLounge"><img src="assets/plainenglish.png" alt="PlainEnglish.io"><img src="assets/ai-journal.png" alt="The AI Journal"><img src="assets/metapress.webp" alt="MetaPress"><img src="assets/business-matters.webp" alt="Business Matters"></div></div>
+    </section>
+
+    <section class="release-section" id="press-releases" aria-labelledby="coverage-title">
+      <div class="container">
+        <div class="section-head"><h2 id="coverage-title">The Latest Press Releases from <span class="accent">Lynote</span></h2><p>Read Lynote’s latest company news, product launches, and official updates published through PR Newswire.</p></div>
+
+        <div class="release-carousel" data-release-carousel>
+          <div class="release-slides" aria-live="polite">
+            <article class="featured release-slide is-active" data-release-slide aria-label="English press release">
+              <div class="feature-copy">
+                <div class="meta"><span>English · Western Europe</span></div>
+                <h3>Lynote.ai Launches Integrated Platform for AI Content Detection and Productivity</h3>
+                <p>The official English-language announcement of Lynote’s integrated platform for AI detection and content productivity.</p>
+                <a class="release-link" href="https://www.prnewswire.co.uk/news-releases/lynoteai-launches-integrated-platform-for-ai-content-detection-and-productivity-302873517.html?tc=eml_cleartime" target="_blank" rel="noopener noreferrer">Read on PR Newswire <span aria-hidden="true">↗</span></a>
+              </div>
+              <aside class="release-publisher" aria-label="Publication details"><img src="assets/pr-newswire.svg" alt="PR Newswire"><div class="release-details"><div><span>Published</span><strong>September 10, 2026</strong></div><div><span>Edition</span><strong>Western Europe · English</strong></div></div><div class="release-word" aria-hidden="true">ENGLISH</div></aside>
+            </article>
+
+            <article class="featured release-slide" data-release-slide aria-label="French press release" hidden>
+              <div class="feature-copy">
+                <div class="meta"><span>Français · France</span></div>
+                <h3>Lynote.ai lance une plateforme intégrée dédiée à la détection de contenu par IA et à la productivité</h3>
+                <p>La version française de l’annonce officielle présentant la plateforme intégrée de Lynote pour la détection de contenu par IA et la productivité.</p>
+                <a class="release-link" href="https://www.prnewswire.com/news-releases/lynoteai-lance-une-plateforme-integree-dediee-a-la-detection-de-contenu-par-ia-et-a-la-productivite-302874594.html?tc=eml_cleartime" target="_blank" rel="noopener noreferrer">Lire sur PR Newswire <span aria-hidden="true">↗</span></a>
+              </div>
+              <aside class="release-publisher" aria-label="Publication details"><img src="assets/pr-newswire.svg" alt="PR Newswire"><div class="release-details"><div><span>Publication</span><strong>10 septembre 2026</strong></div><div><span>Édition</span><strong>France · Français</strong></div></div><div class="release-word" aria-hidden="true">FRANÇAIS</div></aside>
+            </article>
+
+            <article class="featured release-slide" data-release-slide aria-label="German press release" hidden>
+              <div class="feature-copy">
+                <div class="meta"><span>Deutsch · Deutschland</span></div>
+                <h3>Lynote.ai bringt eine integrierte Plattform für KI-gestützte Inhaltserkennung und Produktivitätssteigerung auf den Markt</h3>
+                <p>Die deutschsprachige Mitteilung zur integrierten Lynote-Plattform für KI-Inhaltserkennung und produktive Content-Workflows.</p>
+                <a class="release-link" href="https://www.prnewswire.com/news-releases/lynoteai-bringt-eine-integrierte-plattform-fur-ki-gestutzte-inhaltserkennung-und-produktivitatssteigerung-auf-den-markt-302874599.html?tc=eml_cleartime" target="_blank" rel="noopener noreferrer">Auf PR Newswire lesen <span aria-hidden="true">↗</span></a>
+              </div>
+              <aside class="release-publisher" aria-label="Publication details"><img src="assets/pr-newswire.svg" alt="PR Newswire"><div class="release-details"><div><span>Veröffentlicht</span><strong>10. September 2026</strong></div><div><span>Ausgabe</span><strong>Deutschland · Deutsch</strong></div></div><div class="release-word" aria-hidden="true">DEUTSCH</div></aside>
+            </article>
+
+            <article class="featured release-slide" data-release-slide aria-label="Spanish press release" hidden>
+              <div class="feature-copy">
+                <div class="meta"><span>Español · España</span></div>
+                <h3>Lynote.ai lanza una plataforma integrada para la detección de contenido generado por IA y la productividad</h3>
+                <p>La versión en español del anuncio oficial sobre la plataforma integrada de Lynote para la detección de contenido y la productividad.</p>
+                <a class="release-link" href="https://www.prnewswire.com/news-releases/lynoteai-lanza-una-plataforma-integrada-para-la-deteccion-de-contenido-generado-por-ia-y-la-productividad-302873933.html?tc=eml_cleartime" target="_blank" rel="noopener noreferrer">Leer en PR Newswire <span aria-hidden="true">↗</span></a>
+              </div>
+              <aside class="release-publisher" aria-label="Publication details"><img src="assets/pr-newswire.svg" alt="PR Newswire"><div class="release-details"><div><span>Publicado</span><strong>10 de septiembre de 2026</strong></div><div><span>Edición</span><strong>España · Español</strong></div></div><div class="release-word" aria-hidden="true">ESPAÑOL</div></aside>
+            </article>
+          </div>
+
+          <div class="release-controls" aria-label="Press release carousel controls">
+            <button type="button" class="carousel-arrow" data-release-prev aria-label="Previous press release">←</button>
+            <button type="button" class="carousel-arrow" data-release-next aria-label="Next press release">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="media-section" id="media" aria-labelledby="stories-title">
+      <div class="container">
+        <div class="coverage-head"><div><h2 id="stories-title">Lynote Is Trusted by <span class="accent">Leading Media</span></h2></div><p>Explore articles and industry perspectives from publications covering Lynote, our products, and our approach to authentic AI content.</p></div>
+        <div class="media-grid">
+          <article class="media-card"><div class="logo-box"><img src="assets/ilounge.webp" alt="iLounge"></div><h3>How Lynote AI Helps You Find Real Content Online</h3><p>A look at how Lynote makes AI-written passages easier to identify and review.</p><a class="read-link" href="https://www.ilounge.com/articles/how-lynote-ai-helps-you-find-real-content-online" target="_blank" rel="noopener noreferrer">Read on iLounge <span aria-hidden="true">↗</span></a></article>
+          <article class="media-card"><div class="logo-box"><img src="assets/plainenglish.png" alt="PlainEnglish.io"></div><h3>Why “Best AI Humanizer” Has Become a Top Search in Content Workflows</h3><p>How humanization is becoming a practical step for teams working with AI-assisted drafts.</p><a class="read-link" href="https://plainenglish.io/blog/why-best-ai-humanizer-has-become-the-most-searched-phrase-in-content-workflows" target="_blank" rel="noopener noreferrer">Read on PlainEnglish.io <span aria-hidden="true">↗</span></a></article>
+          <article class="media-card"><div class="logo-box"><img src="assets/ai-journal.png" alt="The AI Journal"></div><h3>From Information Overload to Intelligent Workflows</h3><p>An exploration of how AI is reshaping the way people process information and make decisions.</p><a class="read-link" href="https://aijourn.com/from-information-overload-to-intelligent-workflows-how-ai-is-reshaping-knowledge-processing/" target="_blank" rel="noopener noreferrer">Read on The AI Journal <span aria-hidden="true">↗</span></a></article>
+          <article class="media-card"><div class="logo-box"><img src="assets/metapress.webp" alt="MetaPress"></div><h3>The Science Behind Lynote AI and High-Accuracy Detection</h3><p>A closer look at the language patterns and signals behind Lynote’s AI content detection.</p><a class="read-link" href="https://metapress.com/the-science-behind-lynote-ai-how-we-achieve-99-accuracy/" target="_blank" rel="noopener noreferrer">Read on MetaPress <span aria-hidden="true">↗</span></a></article>
+          <article class="media-card"><div class="logo-box"><img src="assets/business-matters.webp" alt="Business Matters"></div><h3>The Evolution of Content Creation in the Age of AI</h3><p>Why content integrity matters as AI-assisted writing becomes part of modern publishing.</p><a class="read-link" href="https://bmmagazine.co.uk/business/the-evolution-of-content-creation-balancing-integrity-and-engagement-in-the-age-of-advanced-large-language-models/" target="_blank" rel="noopener noreferrer">Read on Business Matters <span aria-hidden="true">↗</span></a></article>
+          <article class="media-card"><div class="logo-box"><img src="assets/redmond.png" alt="Redmond Pie"></div><h3>Lynote.ai Launches AI Detector and Humanizer for Major AI Models</h3><p>Coverage of Lynote’s combined approach to detecting and improving AI-generated content.</p><a class="read-link" href="https://www.redmondpie.com/lynote.ai-launches-powerful-ai-detector-and-humanizer-that-can-outsmart-gpt-5-claude-and-every-major-ai-model/" target="_blank" rel="noopener noreferrer">Read on Redmond Pie <span aria-hidden="true">↗</span></a></article>
+          <article class="media-card"><div class="logo-box"><img src="assets/basic-tutorials.svg" alt="Basic Tutorials"></div><h3>From Bot to Human: The New Era of AI Content Authenticity</h3><p>How creators can balance the efficiency of AI with more authentic, human-centered content.</p><a class="read-link" href="https://basic-tutorials.com/special/from-bot-to-human-navigating-the-new-era-of-ai-content-authenticity/" target="_blank" rel="noopener noreferrer">Read on Basic Tutorials <span aria-hidden="true">↗</span></a></article>
+          <article class="media-card"><div class="logo-box"><img src="assets/tuttotek.png" alt="TuttoTek"></div><h3>Smarter Ways to Verify and Translate AI Content</h3><p>A comparison of AI detection and translation workflows for multilingual content review.</p><a class="read-link" href="https://www.tuttotek.it/web-social/speciali-web-social/confronto-con-il-rilevatore-di-ai-e-strumenti-di-traduzione-modi-piu-intelligenti-per-verificare-e-tradurre-i-contenuti" target="_blank" rel="noopener noreferrer">Read on TuttoTek <span aria-hidden="true">↗</span></a></article>
+        </div>
+        <div class="coverage-more"><a class="btn btn-secondary" href="https://lynote.ai/ai-detector" target="_blank" rel="noopener noreferrer">Read more <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="user-stories" id="real-users" aria-labelledby="user-stories-title">
+      <div class="container">
+        <div class="video-head"><h2 id="user-stories-title">Trusted by <span class="accent">Students, Teachers, &amp; Every Learner</span></h2><p>Watch real-world walkthroughs, reviews, and short demos shared by people exploring Lynote.</p></div>
+        <div class="video-grid">
+          <a class="video-card" href="https://www.youtube.com/watch?v=4aetU1UFU1k&amp;t=192s" target="_blank" rel="noopener noreferrer">
+            <div class="video-thumb"><img src="https://i.ytimg.com/vi/4aetU1UFU1k/hqdefault.jpg" alt="Lynote user video preview" loading="lazy"><span class="video-label">User walkthrough</span><span class="play-button" aria-hidden="true">▶</span></div>
+            <div class="video-copy"><h3>A Closer Look at Lynote</h3><p>Watch a real-world walkthrough on YouTube.</p><span>Watch video ↗</span></div>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/shorts/24mhrJ_qpuk" target="_blank" rel="noopener noreferrer">
+            <div class="video-thumb"><img src="https://i.ytimg.com/vi/24mhrJ_qpuk/hqdefault.jpg" alt="Lynote YouTube Short preview" loading="lazy"><span class="video-label">YouTube Short</span><span class="play-button" aria-hidden="true">▶</span></div>
+            <div class="video-copy"><h3>Lynote in 60 Seconds</h3><p>A quick look at the product experience.</p><span>Watch video ↗</span></div>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/watch?v=4aetU1UFU1k&amp;t=192s" target="_blank" rel="noopener noreferrer">
+            <div class="video-thumb"><img src="https://i.ytimg.com/vi/4aetU1UFU1k/hqdefault.jpg" alt="Lynote product demo preview" loading="lazy"><span class="video-label">Product demo</span><span class="play-button" aria-hidden="true">▶</span></div>
+            <div class="video-copy"><h3>See Lynote in Action</h3><p>Explore how Lynote fits into a real workflow.</p><span>Watch video ↗</span></div>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/shorts/24mhrJ_qpuk" target="_blank" rel="noopener noreferrer">
+            <div class="video-thumb"><img src="https://i.ytimg.com/vi/24mhrJ_qpuk/hqdefault.jpg" alt="Short Lynote creator video preview" loading="lazy"><span class="video-label">Creator video</span><span class="play-button" aria-hidden="true">▶</span></div>
+            <div class="video-copy"><h3>A Quick Creator Walkthrough</h3><p>See the highlights in a short video format.</p><span>Watch video ↗</span></div>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/watch?v=4aetU1UFU1k&amp;t=192s" target="_blank" rel="noopener noreferrer">
+            <div class="video-thumb"><img src="https://i.ytimg.com/vi/4aetU1UFU1k/hqdefault.jpg" alt="Lynote workflow video preview" loading="lazy"><span class="video-label">User story</span><span class="play-button" aria-hidden="true">▶</span></div>
+            <div class="video-copy"><h3>How Users Work with Lynote</h3><p>Discover the product through a user’s perspective.</p><span>Watch video ↗</span></div>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/shorts/24mhrJ_qpuk" target="_blank" rel="noopener noreferrer">
+            <div class="video-thumb"><img src="https://i.ytimg.com/vi/24mhrJ_qpuk/hqdefault.jpg" alt="Real-world Lynote video preview" loading="lazy"><span class="video-label">Quick review</span><span class="play-button" aria-hidden="true">▶</span></div>
+            <div class="video-copy"><h3>A Real-World Lynote Demo</h3><p>Watch a concise product review on YouTube.</p><span>Watch video ↗</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title"><div class="container"><div class="contact-box"><div class="contact-copy"><h2 id="contact-title">Want to Feature insMind or Partner with Us?</h2><p>For press coverage, interviews, editorial collaborations, or media partnerships, connect with our team.</p></div><button class="btn" type="button" data-open-modal>Contact Us <span aria-hidden="true">→</span></button></div></div></section>
+  </main>
+
+  <div class="modal" id="press-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true"><div class="modal-panel"><button class="modal-close" type="button" data-close-modal aria-label="Close contact form">×</button><div class="modal-content"><div class="modal-head"><h2 id="modal-title">Press &amp; Partnership Inquiry</h2><p>Tell us what you’re working on and how the Lynote team can help.</p></div><form class="form" id="press-form"><div class="form-grid"><div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required></div><div class="field"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required></div><div class="field"><label for="organization">Organization or publication</label><input id="organization" name="organization" autocomplete="organization" required></div><div class="field"><label for="type">Inquiry type</label><select id="type" name="type" required><option value="">Select one</option><option>Media interview</option><option>Editorial collaboration</option><option>Expert commentary</option><option>Media partnership</option><option>Other</option></select></div><div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Share your topic, timing, and what you need from us." required></textarea></div></div><div class="form-foot"><p>This prototype form needs to be connected to Lynote’s contact workflow before launch.</p><button class="btn btn-primary" type="submit">Send inquiry →</button></div></form></div><div class="success" aria-live="polite"><div class="success-icon">✓</div><h3>Form Design Complete</h3><p>Connect this form to Lynote’s preferred email or CRM endpoint before publishing.</p><button class="btn btn-secondary" type="button" data-close-modal>Close</button></div></div></div>
+  <script>
+    const modal=document.querySelector('#press-modal');const panel=modal.querySelector('.modal-panel');const form=document.querySelector('#press-form');const content=modal.querySelector('.modal-content');const success=modal.querySelector('.success');let returnFocus;
+    function openModal(trigger){returnFocus=trigger;modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');requestAnimationFrame(()=>document.querySelector('#name').focus())}
+    function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open');content.style.display='';success.classList.remove('show');form.reset();if(returnFocus)returnFocus.focus()}
+    document.querySelectorAll('[data-open-modal]').forEach(button=>button.addEventListener('click',()=>openModal(button)));document.querySelectorAll('[data-close-modal]').forEach(button=>button.addEventListener('click',closeModal));modal.addEventListener('mousedown',event=>{if(!panel.contains(event.target))closeModal()});document.addEventListener('keydown',event=>{if(event.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+    form.addEventListener('submit',event=>{event.preventDefault();content.style.display='none';success.classList.add('show');success.querySelector('button').focus()});
+
+    const releaseCarousel=document.querySelector('[data-release-carousel]');
+    if(releaseCarousel){
+      const releaseSlides=[...releaseCarousel.querySelectorAll('[data-release-slide]')];
+      const releaseDots=[...releaseCarousel.querySelectorAll('[data-release-dot]')];
+      const releasePrev=releaseCarousel.querySelector('[data-release-prev]');
+      const releaseNext=releaseCarousel.querySelector('[data-release-next]');
+      const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let releaseIndex=0;
+      let releaseTimer;
+
+      function showRelease(nextIndex){
+        releaseIndex=(nextIndex+releaseSlides.length)%releaseSlides.length;
+        releaseSlides.forEach((slide,index)=>{
+          const isActive=index===releaseIndex;
+          slide.hidden=!isActive;
+          slide.classList.toggle('is-active',isActive);
+        });
+        releaseDots.forEach((dot,index)=>{
+          const isActive=index===releaseIndex;
+          dot.classList.toggle('is-active',isActive);
+          dot.setAttribute('aria-selected',String(isActive));
+          dot.tabIndex=isActive?0:-1;
+        });
+      }
+
+      function stopReleaseAutoplay(){
+        window.clearInterval(releaseTimer);
+      }
+
+      function startReleaseAutoplay(){
+        if(reduceMotion)return;
+        stopReleaseAutoplay();
+        releaseTimer=window.setInterval(()=>showRelease(releaseIndex+1),7000);
+      }
+
+      releasePrev.addEventListener('click',()=>{showRelease(releaseIndex-1);startReleaseAutoplay()});
+      releaseNext.addEventListener('click',()=>{showRelease(releaseIndex+1);startReleaseAutoplay()});
+      releaseDots.forEach((dot,index)=>dot.addEventListener('click',()=>{showRelease(index);startReleaseAutoplay()}));
+      releaseCarousel.addEventListener('mouseenter',stopReleaseAutoplay);
+      releaseCarousel.addEventListener('mouseleave',startReleaseAutoplay);
+      releaseCarousel.addEventListener('focusin',stopReleaseAutoplay);
+      releaseCarousel.addEventListener('focusout',event=>{if(!releaseCarousel.contains(event.relatedTarget))startReleaseAutoplay()});
+      showRelease(0);
+      startReleaseAutoplay();
+    }
+  </script>
+</body>
+</html>
