@@ -152,6 +152,9 @@ h1,h2,h3,p{overflow-wrap:break-word}
   transition:.2s ease;
 }
 .media-card:nth-child(-n+2){grid-column:span 3;min-height:370px;padding:34px 36px}
+.media-card[hidden]{display:none}
+.coverage-chevron{flex-shrink:0;transition:transform .2s ease}
+.coverage-more button[aria-expanded="true"] .coverage-chevron{transform:rotate(180deg)}
 .media-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--press-gradient);transform:scaleY(0);transform-origin:top;transition:transform .22s ease}
 .media-card:hover{transform:translateY(-4px);border-color:#d8d9e7;box-shadow:0 18px 38px rgba(27,36,70,.08)}
 .media-card:hover:before{transform:scaleY(1)}
